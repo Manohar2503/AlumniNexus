@@ -12,21 +12,21 @@ import AbroadPage from "../Components/AbroadPage";
 const Body = () => {
   return (
     <>
-      <div className="container bg-[f2f4f6]">
+      <div className="w-full bg-[f2f4f6] overflow-x-hidden">
         <div className="cusShadow relative">
-         
           <img
-            className="w-full rounded-xl ring-4 ring-white h-[100%]"
+            className="w-full h-[600px] md:h-[900px] lg:h-full object-cover rounded-xl ring-4 ring-white"
             src={pic3}
             alt="VVIT"
           />
+
           <div
             className="absolute inset-0 flex items-center justify-center 
                        text-center text-white bg-opacity-50 bg-black p-4 
-                       animate-slideUp "
+                       animate-slideUp"
           >
-            <div className=" lg:w-[570px]">
-              <h1 className="  text-[10px] md:leading-[46px] md:text-headingColor md:font-[800] md:text-[40px] md:leading-[50px]">
+            <div className="lg:w-[570px]">
+              <h1 className="text-[10px] md:leading-[46px] md:text-headingColor md:font-[800] md:text-[40px] md:leading-[50px]">
                 Empowering Minds, Shaping Futures. Discover excellence at our
                 university today!
               </h1>
@@ -39,17 +39,16 @@ const Body = () => {
               </p>
             </div>
           </div>
-          <div className="mt-[30px] lg:mt-[25px] flex flex-col lg:flex-row lg:items-center gap-5 lg:gap-[70px]">
-          </div>
         </div>
+
         <div className="my-8">
           <Slider />
         </div>
         <About />
         <HomeEvent />
-        <EventsHome />
+      {/* <EventsHome /> */ }
         <DonarImages />
-        <AbroadPage/>
+        <AbroadPage />
         <AlumniGallary />
       </div>
     </>

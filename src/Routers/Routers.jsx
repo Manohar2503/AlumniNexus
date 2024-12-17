@@ -2,7 +2,7 @@ import React from "react";
 import Body from '../Pages/Body'
 import Footer from '../Pages/Footer'
 import { Header } from "../Pages";
-import Login from "../Components/Login";
+
 import { Routes, Route } from "react-router-dom";
 import DonarImages from "../Components/DonarImages";
 import Leanrning from "../Components/Leanrning";
@@ -17,6 +17,7 @@ import MentorPage from "../Components/MainPages/MentorPage";
 import JobsPage from "../Components/MainPages/JobsPage";
 import AboutPage from "../Components/MainPages/AboutPage";
 import ContactPage from "../Components/MainPages/ContactPage";
+import LoginPage from "../Pages/LoginPage";
 
 const Routers = () => {
   return (
@@ -24,7 +25,7 @@ const Routers = () => {
       <Route path="/" element={<Body/>} />
       <Route path="/body" element={<Body/>} />
       <Route path="/footer" element={<Footer/>} />
-      <Route path="/login" element={<Login/>} />
+      <Route path="/login" element={<LoginPage/>} />
       <Route path="/learning" element={<Leanrning/>}/>
       <Route path="/events" element= {<Event/>}/>
       <Route path="/form" element={<AddForm/>}/>  

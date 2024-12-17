@@ -6,7 +6,8 @@ const LatestJobs = () => {
     return(
       <div >
            <div className='bg-white drop-shadow-md m-2 p-4 rounded-lg hover:drop-shadow-xl'>
-      <div ><h3 className="border border-gray-300 w-[50%] rounded-md pl-2">Actively hiring</h3>
+      <div >
+        <h3 className="border border-gray-300 w-[50%] rounded-md pl-2">Actively hiring</h3>
       </div>
       <div >
         <h2 className='my-2 font-bold'>{jobs.role}</h2>
